@@ -34,22 +34,20 @@ var score = 0;
 var body = document.body;
 
 
-// introductory title and goal
-var h1 = document.createElement("h1");
-h1.textContent = "JavaScript Quiz";
-h1.setAttribute("style", "text-align:center");
-body.appendChild(h1);
+//start quiz, hide certain elements and show others.
+function startQuiz(){
 
-var h4 = document.createElement("h4");
-h4.textContent = "You have 60 seconds to complete the quiz. Each wrong answer will subtract 5 seconds. Your final score will be your correct answers plus your seconds remaining."
-h4.setAttribute("style", "text-align:center");
-body.appendChild(h4);
+}
 
-// start button
-var button = document.createElement("button");
-button.textContent = "Start!";
-button.className = "start-button";
-body.appendChild(button);
+//call when a question is answered?
+function nextQuestion(){
+  //show next question.
+}
+
+//call when last question has been answered?
+function endQuiz(){
+  //stop timer, show highscores form...?
+}
 
 // need a function that takes the questions and turns them into html
 // then pass that function through the timed quiz structure
